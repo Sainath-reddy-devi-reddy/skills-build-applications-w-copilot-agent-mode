@@ -1,10 +1,21 @@
 .App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  color: #263238;
+  font-family: 'Segoe UI', Arial, sans-serif;
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.Octofit-logo {
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +25,94 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: rgba(255,255,255,0.85);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #263238;
+  box-shadow: 0 4px 24px rgba(79,138,139,0.08);
+  padding-top: 0;
+}
+
+.App-nav {
+  width: 100%;
+  background: linear-gradient(90deg, #4F8A8B 0%, #08AEEA 100%);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(79,138,139,0.10);
+  margin-bottom: 2rem;
+}
+
+.App-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.App-nav a:hover {
+  color: #FFD166;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #08AEEA;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.App-link:hover {
+  color: #4F8A8B;
+}
+
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(79,138,139,0.10);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #b2ebf2;
+}
+th {
+  background: #4F8A8B;
+  color: #fff;
+  font-size: 1.1rem;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+
+button {
+  background: linear-gradient(90deg, #08AEEA 0%, #4F8A8B 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.5rem;
+  box-shadow: 0 2px 8px rgba(79,138,139,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #FFD166 0%, #4F8A8B 100%);
+  color: #263238;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4F8A8B;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +122,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom scrollbar for a modern look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b2ebf2;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e0f7fa;
 }
